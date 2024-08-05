@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="to do.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+   <div id="top">
+<h1 id="heading_name">To Do List</h1>       
+</div>
+<div class="popup_background"></div>
+    <div class="popup">
+
+        <input type="text" id="in"><br>
+        <button onclick="Add()" class="save">Save</button>
+        <button onclick="cancel()" class="cancel">Cancel</button><br>
+    </div>
+ 
+<div id="add">
+    <div class="container">
+    <input type="checkbox" id="checkbox">
+    <div id="list">
+         <p class="todolistcontent"> Hi am lisanth i am here to do the work which was assigned to me</p>
+    </div>
+    <i class="fa fa-edit" onclick="edit(event)" style="position: relative; color: brown; font-size: 0.7cm;" ></i>
+    <i class="fa fa-trash" onclick="del(event)" style="position: relative; color: brown; font-size: 0.7cm;"></i>
+    </div>
+</div>
+<button class="plus" onclick= "create()">+</button>
+
+    <script src="to do.js"></script>
+
+</body>
+</html>
